@@ -25,14 +25,17 @@ export const   LoginScreen = () => {
     }
 
     const {loading} = useSelector(state => state.ui)
-    console.log(loading)
+    
     
 
     return (
         <>
             <h3 className="auth__title">Login</h3>
 
-            <form onSubmit ={handleLogin}>
+            <form 
+                onSubmit ={handleLogin}
+                className = "animate__animated animate__fadeIn animate__faster"
+                >
 
                 <input 
                     type="text"
